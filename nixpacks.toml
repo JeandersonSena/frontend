@@ -1,3 +1,11 @@
+<<<<<<< HEAD
 [deploy]
 
 publish = "dist"
+=======
+# nixpacks.toml (Versão Simplificada)
+
+[deploy]
+  # Informa ao Nixpacks para servir arquivos estáticos da pasta 'dist'
+  publish = "dist"
+>>>>>>> ca45ff9 (alteração no pacote nixpacks)
