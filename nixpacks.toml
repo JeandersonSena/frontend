@@ -1,0 +1,13 @@
+# nixpacks.toml
+
+[phases.build]
+  # Comandos para instalar dependências e buildar (Nixpacks geralmente detecta isso,
+  # mas podemos ser explícitos se necessário)
+  cmds = ["npm install", "npm run build"]
+
+# Configuração crucial para sites estáticos:
+[deploy]
+  # Informa ao Nixpacks para servir arquivos estáticos da pasta 'dist'
+  # e não procurar por um comando 'start'.
+  start_command = "echo 'Static site, no start command needed'" # Comando inócuo para evitar o erro
+  publish = "dist"
