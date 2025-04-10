@@ -41,7 +41,8 @@
 import axios from 'axios';
 import MotoristaForm from './components/MotoristaForm.vue';
 
-const BACKEND_URL = 'http://localhost:3001'; // Substitua pela URL do Railway
+const BACKEND_URL = process.env.VUE_APP_BACKEND_URL;
+// Se usar Vite: const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;// Substitua pela URL do Railway
 export default {
   components: {
     MotoristaForm
